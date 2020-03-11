@@ -9,5 +9,90 @@
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+
+    <a-scene embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 4x4; sourceType: webcam; debugUIEnabled: false;">
+        <!-- Equipe 2 AGENT 5 -->
+        <!--5 1-->
+        <a-marker
+        type="pattern"
+        url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-51.patt?v=1583250123556"
+        >
+            <a-torus-knot
+            color="blue"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <!--5 2-->
+        <a-marker
+            type="pattern"
+            url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-52.patt?v=1583250125399"
+        >
+            <a-torus-knot
+            color="red"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <!--5 3-->
+        <a-marker
+            type="pattern"
+            url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-53.patt?v=1583250127544"
+        >
+            <a-torus-knot
+            color="green"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <!--5 4-->
+        <a-marker
+            type="pattern"
+            url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-54.patt?v=1583250131568"
+        >
+            <a-torus-knot
+            color="magenta"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <!--5 5-->
+        <a-marker
+            type="pattern"
+            url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-55.patt?v=1583250133443"
+        >
+            <a-torus-knot
+            color="cyan"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <!--5 6-->
+        <a-marker
+            type="pattern"
+            url="https://cdn.glitch.com/c5abbc46-69e9-4238-af07-f4235b781c54%2Fpattern-56.patt?v=1583250135058"
+        >
+            <a-torus-knot
+            color="yellow"
+            position="0 0 0"
+            radius="1"
+            heigth="4"
+            rotation="90"
+            ></a-torus-knot>
+        </a-marker>
+        <a-entity camera></a-camera>
+    </a-scene>
 </body>
