@@ -1,0 +1,69 @@
+/* CSS files add styling rules to your content */
+
+body {
+    margin : 0px;
+    overflow: hidden; 
+    font-family: Monospace;
+  }
+  
+  h1 {
+    font-style: italic;
+    color: #373fff;
+  }
+
+  .scanningSpinner {
+    margin: 100px auto;
+    height: 40px;
+    text-align: center;
+  }
+
+  .scanningSpinner label {
+    display: block;
+    color: #333;
+    font-size: 200%;
+  }
+
+  .scanningSpinner > div {
+    background-color: #333;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+
+  .scanningSpinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+  }
+
+  .scanningSpinner .rect3 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+  }
+
+  @-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+      -webkit-transform: scaleY(0.4);
+    }
+    20% {
+      -webkit-transform: scaleY(1);
+    }
+  }
+
+  @keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }
+    20% {
+      transform: scaleY(1);
+      -webkit-transform: scaleY(1);
+    }
+  }
+  
