@@ -16,3 +16,5 @@ app.get('/assets/pattern/:pattern', function(req,res){
 
 console.log('Server launched !')
 app.set('port', process.env.PORT || 3000);
+app.listen(app.get('port'))
+console.log('You can connect yourself locally to this address : localhost:' + app.get('port'))
