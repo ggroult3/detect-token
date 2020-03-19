@@ -15,4 +15,4 @@ app.get('/assets/pattern/:pattern', function(req,res){
 })
 
 console.log('Server launched !')
-app.listen(8080)
+app.set('port', process.env.PORT || 3000);
